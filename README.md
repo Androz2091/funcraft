@@ -12,8 +12,8 @@ npm install --save funcraft
 const funcraft = require("funcraft");
 
 // Obtenir les stats d'un joueur
-funcraft.fetchJoueur("Saethyios").then((joueur) => {
-    console.log(joueur.totalParties); // 4935
+funcraft.fetchPlayer("Saethyios").then((player) => {
+    console.log(player.totalParties); // 4935
     console.log(player.rush.victoires); // 158
 });
 
