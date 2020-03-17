@@ -1,11 +1,37 @@
 # Funcraft Scraper
 
-## Examples
+## Installation
+
+```sh
+npm install --save funcraft
+```
+
+## Exemple
 
 ```js
 const funcraft = require("funcraft");
 
-// Gets Saethyios stats
+// Obtenir les stats d'un joueur
+funcraft.fetchJoueur("Saethyios").then((joueur) => {
+    console.log(joueur.totalParties); // 4935
+    console.log(player.rush.victoires); // 158
+});
+
+// Obtenir le classement des meilleurs joueurs pour chaque jeu
+funcraft.fetchLeaderboard().then((leaderboard) => {
+    console.log(leaderboard.rush.username); // Awekooo
+    console.log(leaderboard.rush.avatar); // https://d31zb6ev5hmn3f.cloudfront.net/_u/avatar/head/Awekooo/s/949f03f1d349208300be546a58d488c8a65f477a
+});
+```
+
+## Méthodes
+
+## Récupération des statistiques d'un joueur
+
+```js
+const funcraft = require("funcraft");
+
+// Obtenir les stats de Saethyios
 funcraft.fetchPlayer("Saethyios").then((player) => {
     console.log(player);
     /*
