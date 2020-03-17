@@ -26,7 +26,7 @@ funcraft.fetchLeaderboard().then((leaderboard) => {
 
 ## Méthodes
 
-## Récupération des statistiques d'un joueur
+### Récupération des statistiques d'un joueur
 
 ```js
 const funcraft = require("funcraft");
@@ -78,6 +78,60 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             killCount: 96,
             deathCount: 72,
             damageCount: 3776
+        }
+    }
+    */
+});
+```
+
+### Récupération des premiers membres de chaque jeu
+
+```js
+const funcraft = require("funcraft");
+
+funcraft.fetchLeaderboard().then((leaderboard) => {
+    console.log(leaderboard);
+    /*
+    {
+        rush: {
+            username: 'Awekooo',
+            avatar: 'https://d31zb6ev5hmn3f.cloudfront.net/_u/avatar/head/Awekooo/s/949f03f1d349208300be546a58d488c8a65f477a'
+        },
+        hikabrain: {
+            username: 'XeRRoX_',
+            avatar: 'https://d31zb6ev5hmn3f.cloudfront.net/_u/avatar/head/XeRRoX_/s/d87127aa9c55ddf7c8bf2b6bedaedfc4673b7f3e'
+        },
+        skywars: {
+            username: 'Aymerouz',
+            avatar: 'https://d31zb6ev5hmn3f.cloudfront.net/_u/avatar/head/Aymerouz/s/1e8b7d3db8b69ba247c800e0ea2ac14b33b50e94'
+        },
+        mma: {
+            username: 'TSEW',
+            avatar: 'https://d31zb6ev5hmn3f.cloudfront.net/_u/avatar/head/TSEW/s/b06f8bba3cf0a60356c714adae5faaa9aab20d92'
+        },
+        shootcraft: {
+            username: 'Welard_Manitou',
+            avatar: 'https://d31zb6ev5hmn3f.cloudfront.net/_u/avatar/head/Welard_Manitou/s/470103adb29913f8058aeca7684c76b15a385e8b'
+        },
+        infected: {
+            username: 'sweeetener',
+            avatar: 'https://d31zb6ev5hmn3f.cloudfront.net/_u/avatar/head/sweeetener/s/703a006a040646ead78368a903296181fe49e620'
+        },
+        survival: {
+            username: '100dewinrateenhg',
+            avatar: 'https://d31zb6ev5hmn3f.cloudfront.net/_u/avatar/head/100dewinrateenhg/s/d18bd2cf8a4dd9d6baf8fcc33c35880cf3c8439e'
+        },
+        blitz: {
+            username: 'CaVaEtreToutNoir',
+            avatar: 'https://d31zb6ev5hmn3f.cloudfront.net/_u/avatar/head/CaVaEtreToutNoir/s/44f8470780a5b22f11c0771ae9263940e256cb24'
+        },
+        pvpsmash: {
+            username: 'atakee',
+            avatar: 'https://d31zb6ev5hmn3f.cloudfront.net/_u/avatar/head/atakee/s/8ebf1b61e2534a7fef7de6e3e397bde765ede1ce'
+        },
+        landrush: {
+            username: 'OvD3_Nightmare',
+            avatar: 'https://d31zb6ev5hmn3f.cloudfront.net/_u/avatar/head/OvD3_Nightmare/s/91559b230da165ca54e870136e15da324c20a983'
         }
     }
     */
