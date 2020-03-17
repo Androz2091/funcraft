@@ -1,0 +1,9 @@
+# Node
+node_modules
+yarn.lock
+
+# Test
+**test**
+
+# Vscode stuff
+.vscode

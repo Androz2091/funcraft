@@ -1,0 +1,14 @@
+{
+  "name": "funcraft",
+  "version": "1.0.0",
+  "description": "Fetch data from Funcraft.net easily!",
+  "main": "index.js",
+  "repository": "git+https://github.com/Androz2091/funcraft.git",
+  "author": "Androz2091 <androz2091@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "human-ms": "^1.0.5",
+    "node-fetch": "^2.6.0"
+  }
+}
