@@ -40,9 +40,10 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
         avatar: 'https://d31zb6ev5hmn3f.cloudfront.net/_u/avatar/head/Saethyios/m2/f6484bb54772cbfe93f4afab68a0d4cc35a8dd6c',
         registeredAt: '19 juin 2019, 19h33',
         lastConnection: '12 mars 2020, 18h32',
+        banned: true,
         gloryCount: 447827,
         gameCount: 4935,
-        banned: true,
+        totalGameTime: 777660000,
         rush: {
             points: 123473,
             gameCount: 321,
@@ -53,14 +54,6 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             deathCount: 2443,
             destroyedBedCount: 311
         },
-        skywars {
-            points: 129036,
-            gameCount: 2949,
-            top1Count: 600,
-            gameTime: 343680000,
-            killCount: 4305,
-            deathCount: 2406
-        },
         hikaBrain: {
             points: 24251,
             gameCount: 198,
@@ -70,6 +63,14 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             killCount: 2711,
             deathCount: 3044
         },
+        skywars {
+            points: 129036,
+            gameCount: 2949,
+            top1Count: 600,
+            gameTime: 343680000,
+            killCount: 4305,
+            deathCount: 2406
+        },
         octogone: {
             points: 5362,
             gameCount: 82,
@@ -78,16 +79,6 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             killCount: 96,
             deathCount: 72,
             damageCount: 3776
-        },
-        blitz: {
-            points: 554,
-            gameCount: 6,
-            victoryCount: 4,
-            defeatCount: 2,
-            gameTime: 1260000,
-            killCount: 9,
-            deathCount: 12,
-            nexusDamageCount: 3
         },
         shootCraft: {
             points: 160,
@@ -112,6 +103,16 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             gameTime: 0,
             killCount: 0,
             deathCount: 0
+        },
+        blitz: {
+            points: 554,
+            gameCount: 6,
+            victoryCount: 4,
+            defeatCount: 2,
+            gameTime: 1260000,
+            killCount: 9,
+            deathCount: 12,
+            nexusDamageCount: 3
         },
         pvPSmash: {
             points: 36249,
