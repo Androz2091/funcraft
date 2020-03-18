@@ -13,8 +13,8 @@ const funcraft = require("funcraft");
 
 // Obtenir les stats d'un joueur
 funcraft.fetchPlayer("Saethyios").then((player) => {
-    console.log(player.totalParties); // 4935
-    console.log(player.rush.victoires); // 158
+    console.log(player.gameCount); // 4935
+    console.log(player.rush.victoryCount); // 158
 });
 
 // Obtenir le classement des meilleurs joueurs pour chaque jeu
