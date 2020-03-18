@@ -1,6 +1,6 @@
 {
   "name": "funcraft",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Fetch data from Funcraft.net easily!",
   "main": "index.js",
   "repository": "git+https://github.com/Androz2091/funcraft.git",
