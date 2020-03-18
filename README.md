@@ -78,6 +78,59 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             killCount: 96,
             deathCount: 72,
             damageCount: 3776
+        },
+        blitz: {
+            points: 554,
+            gameCount: 6,
+            victoryCount: 4,
+            defeatCount: 2,
+            gameTime: 1260000,
+            killCount: 9,
+            deathCount: 12,
+            nexusDamageCount: 3
+        },
+        shootCraft: {
+            points: 160,
+            gameCount: 4,
+            top1Count: 0,
+            gameTime: 1140000,
+            killCount: 74,
+            deathCount: 107
+        },
+        infecte: {
+            points: 73,
+            gameCount: 8,
+            victoryCount: 0,
+            gameTime: 1380000,
+            killCount: 10,
+            deathCount: 13
+        },
+        survival: {
+            points: 0,
+            gameCount: 0,
+            top1Count: 0,
+            gameTime: 0,
+            killCount: 0,
+            deathCount: 0
+        },
+        pvPSmash: {
+            points: 36249,
+            gameCount: 1367,
+            top1Count: 128,
+            gameTime: 35880000,
+            killCount: 1814,
+            deathCount: 1228,
+            damageCount: 64263
+        },
+        landRush: {
+            points: 0,
+            gameCount: 0,
+            victoryCount: 0,
+            defeatCount: 0,
+            gameTime: 0,
+            killCount: 0,
+            deathCount: 0,
+            destroyedBedCount: 0
         }
     }
     */
