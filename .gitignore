@@ -5,5 +5,6 @@ yarn.lock
 # Test
 **test**
 
-# Vscode stuff
+#IDEs stuff
 .vscode
+.idea
