@@ -34,6 +34,6 @@ module.exports = class Player {
         this.blitz = new BlitzStats($);
         this.pvPSmash = new PvPSmashStats($);
         this.landRush = new LandRushStats($);
-    }
+    };
 
 }
