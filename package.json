@@ -3,6 +3,9 @@
   "version": "1.2.1",
   "description": "Fetch data from Funcraft.net easily!",
   "main": "index.js",
+  "scripts": {
+    "test": "index.js"
+  },
   "repository": "git+https://github.com/Androz2091/funcraft.git",
   "author": "Androz2091 <androz2091@gmail.com>",
   "license": "MIT",
