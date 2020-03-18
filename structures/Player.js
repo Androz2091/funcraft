@@ -3,6 +3,11 @@ const SkywarsStats = require("./SkywarsStats");
 const HikaBrainStats = require("./HikaBrainStats");
 const OctogoneStats = require("./OctogoneStats");
 const BlitzStats = require("./BlitzStats");
+const ShootCraftStats = require("./ShootCraftStats");
+const InfecteStats = require("./InfecteStats");
+const SurvivalStats = require("./SurvivalStats");
+const PvPSmashStats = require("./PvPSmashStats");
+const LandRushStats = require("./LandRushStats");
 
 module.exports = class Player {
 
