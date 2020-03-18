@@ -2,6 +2,7 @@ const RushStats = require("./RushStats");
 const SkywarsStats = require("./SkywarsStats");
 const HikaBrainStats = require("./HikaBrainStats");
 const OctogoneStats = require("./OctogoneStats");
+const BlitzStats = require("./BlitzStats");
 
 module.exports = class Player {
 
@@ -23,6 +24,12 @@ module.exports = class Player {
         this.skywars = new SkywarsStats($);
         this.hikaBrain = new HikaBrainStats($);
         this.octogone = new OctogoneStats($);
+        this.blitz = new BlitzStats($);
+        this.shootCraft = new ShootCraftStats($);
+        this.infecte = new InfecteStats($);
+        this.survival = new SurvivalStats($);
+        this.pvPSmash = new PvPSmashStats($);
+        this.landRush = new LandRushStats($);
     }
 
 }
