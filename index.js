@@ -3,6 +3,7 @@ const cheerio = require("cheerio");
 
 const Player = require("./structures/Player");
 const Leaderboard = require("./structures/Leaderboard");
+const PlayerCounts = require("./structures/PlayerCounts");
 
 const baseURL = "https://www.funcraft.net/fr/";
 
@@ -27,6 +28,16 @@ module.exports = {
             const content = await res.text();
             const $ = cheerio.load(content);
             resolve(new Leaderboard($));
+        });
+    },
+
+    fetchPlayerCounts: () => {
+        return new Promise(async (resolve) => {
+            const url = `${baseURL}jeux`;
+            const res = await fetch(url);
+            const content = await res.text();
+            const $ = cheerio.load(content);
+            resolve(new PlayerCounts($));
         });
     }
 

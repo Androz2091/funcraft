@@ -22,6 +22,12 @@ funcraft.fetchLeaderboard().then((leaderboard) => {
     console.log(leaderboard.rush.username); // Awekooo
     console.log(leaderboard.rush.avatar); // https://d31zb6ev5hmn3f.cloudfront.net/_u/avatar/head/Awekooo/s/949f03f1d349208300be546a58d488c8a65f477a
 });
+
+// Obtenir le nombre de joueurs en ligne
+funcraft.fetchPlayerCounts().then((counts) => {
+    console.log(counts.totalOnline); // 2636
+    console.log(counts.rush); // 428
+});
 ```
 
 ## Méthodes
@@ -186,6 +192,31 @@ funcraft.fetchLeaderboard().then((leaderboard) => {
             username: 'OvD3_Nightmare',
             avatar: 'https://d31zb6ev5hmn3f.cloudfront.net/_u/avatar/head/OvD3_Nightmare/s/91559b230da165ca54e870136e15da324c20a983'
         }
+    }
+    */
+});
+```
+
+### Récupération des nombres de joueurs
+
+```js
+const funcraft = require("funcraft");
+
+funcraft.fetchPlayerCounts().then((counts) => {
+    console.log(counts);
+    /*
+    {
+        totalOnline: 2636,
+        recordPlayerOnline: 18124,
+        registeredPlayers: 1618964,
+        premiumUsers: 702277,
+        nonPremiumUsers: 916687,
+        freecube: 478,
+        rush: 428,
+        hikabrain: 405,
+        skywars: 304,
+        infecte: 35,
+        others: 986
     }
     */
 });
