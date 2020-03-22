@@ -149,7 +149,7 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             deathCount: 12,
             nexusDamageCount: 3
         },
-        pvPSmash: {
+        PvPSmash: {
             points: 36249,
             gameCount: 1367,
             top1Count: 128,

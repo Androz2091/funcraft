@@ -22,7 +22,6 @@ module.exports = class Player {
 
         this.gloryCount = parseInt($(".info-stats").get(0).children[1].children[2].data.trim().split(" Gloires")[0].split(" ").join(""));
         this.gameCount = parseInt($(".info-stats").get(0).children[3].children[0].data.trim().split(" ")[0]);
-        this.totalGameTime = new RushStats($).gameTime + new HikaBrainStats($).gameTime + new SkywarsStats($).gameTime + new OctogoneStats($).gameTime + new ShootCraftStats($).gameTime + new InfecteStats($).gameTime + new SurvivalStats($).gameTime + new BlitzStats($).gameTime + new PvPSmashStats($).gameTime + new LandRushStats($).gameTime;
 
         this.rush = new RushStats($);
         this.hikaBrain = new HikaBrainStats($);
@@ -32,8 +31,21 @@ module.exports = class Player {
         this.infecte = new InfecteStats($);
         this.survival = new SurvivalStats($);
         this.blitz = new BlitzStats($);
-        this.pvPSmash = new PvPSmashStats($);
+        this.PvPSmash = new PvPSmashStats($);
         this.landRush = new LandRushStats($);
-    };
+    }
+
+    get totalGameTime() {
+        return this.rush.gameTime
+        + this.hikaBrain.gameTime
+        + this.skywars.gameTime
+        + this.octogone.gameTime
+        + this.shootCraft.gameTime
+        + this.infecte.gameTime
+        + this.survival.gameTime
+        + this.blitz.gameTime
+        + this.PvPSmash.gameTime
+        + this.landRush.gameTime;
+    }
 
 }
