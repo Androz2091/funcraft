@@ -10,6 +10,7 @@ module.exports = class OctogoneStats {
         this.gameCount = parseInt(stats.children[7].children[3].children[0].data.split(" ").join("")) || 0;
         this.top1Count = parseInt(stats.children[9].children[3].children[0].data.split(" ").join("")) || 0;
         this.defeatCount = parseInt(this.gameCount - this.top1Count) || 0;
+        this.wl = parseInt(this.top1Count / this.defeatCount) || 0;
         this.gameTime = ms(stats.children[11].children[3].children[0].data) || 0;
         this.killCount = parseInt(stats.children[13].children[3].children[0].data.split(" ").join("")) || 0;
         this.deathCount = parseInt(stats.children[15].children[3].children[0].data.split(" ").join("")) || 0;
