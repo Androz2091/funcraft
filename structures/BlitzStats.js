@@ -13,6 +13,7 @@ module.exports = class BlitzStats {
         this.gameTime = ms(stats.children[13].children[3].children[0].data) || 0;
         this.killCount = parseInt(stats.children[15].children[3].children[0].data.split(" ").join("")) || 0;
         this.deathCount = parseInt(stats.children[17].children[3].children[0].data.split(" ").join("")) || 0;
+        this.kd = parseInt(this.killCount/this.deathCount) || 0
         this.nexusDamageCount = parseInt(stats.children[19].children[3].children[0].data.split(" ").join(" ")) || 0;
 
     }
