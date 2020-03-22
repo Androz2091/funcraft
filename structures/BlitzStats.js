@@ -21,7 +21,7 @@ module.exports = class BlitzStats {
     }
     
       get wl() {
-       return parseFloat (this.victoryCount / this.defeatCount) || 0;
+       return parseFloat(this.victoryCount / this.defeatCount) || 0;
     }
 
 };
