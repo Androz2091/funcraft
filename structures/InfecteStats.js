@@ -15,4 +15,16 @@ module.exports = class InfecteStats {
 
     }
 
+    get kd() {
+        return (parseFloat(this.killCount / this.deathCount) || 0).toFixed(2);
+    }
+
+    get wl() {
+        return (parseFloat(this.victoryCount / this.deathCount) || 0).toFixed(2);
+    }
+
+    get defeatCount() {
+        return parseInt(this.gameCount - this.victoryCount) || 0;
+    }
+
 };

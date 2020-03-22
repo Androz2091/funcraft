@@ -16,5 +16,13 @@ module.exports = class LandRushStats {
         this.destroyedBedCount = parseInt(stats.children[19].children[3].children[0].data.split(" ").join("")) || 0;
 
     }
+    
+    get kd() {
+        return (parseFloat(this.killCount / this.deathCount) || 0).toFixed(2);
+    }
+    
+    get wl() {
+        return (parseFloat(this.victoryCount / this.defeatCount) || 0).toFixed(2);
+    }
 
 };
