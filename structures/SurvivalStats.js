@@ -16,11 +16,11 @@ module.exports = class SurvivalStats {
     }
    
     get kd() {
-        return parseFloat(this.killCount/this.deathCount) || 0;
+        return (parseFloat(this.killCount/this.deathCount) || 0).toFixed(2);
     }
     
     get wl() {
-        return parseFloat(this.victoryCount / this.defeatCount) || 0;
+        return (parseFloat(this.victoryCount / this.defeatCount) || 0).toFixed(2);
     }
       
     get defeatCount() {
