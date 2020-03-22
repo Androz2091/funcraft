@@ -46,9 +46,10 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
         avatar: 'https://d31zb6ev5hmn3f.cloudfront.net/_u/avatar/head/Saethyios/m2/f6484bb54772cbfe93f4afab68a0d4cc35a8dd6c',
         registeredAt: '19 juin 2019, 19h33',
         lastConnection: '12 mars 2020, 18h32',
+        banned: true,
         gloryCount: 447827,
         gameCount: 4935,
-        banned: true,
+        totalGameTime: 777660000,
         rush: {
             points: 123473,
             gameCount: 321,
@@ -137,6 +138,16 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             killCount: 0,
             deathCount: 0,
             kd : 0
+        },
+        blitz: {
+            points: 554,
+            gameCount: 6,
+            victoryCount: 4,
+            defeatCount: 2,
+            gameTime: 1260000,
+            killCount: 9,
+            deathCount: 12,
+            nexusDamageCount: 3
         },
         pvPSmash: {
             points: 36249,
