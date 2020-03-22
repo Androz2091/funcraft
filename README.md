@@ -58,14 +58,14 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             gameTime: 225660000,
             killCount: 1868,
             deathCount: 2443,
-            kd: 0.8
+            kd: 0.8,
             destroyedBedCount: 311
         },
         skywars {
             points: 129036,
             gameCount: 2949,
             top1Count: 600,
-            defeatCount: 2340
+            defeatCount: 2340,
             wl: 0.2,
             gameTime: 343680000,
             killCount: 4305,
@@ -77,10 +77,10 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             gameCount: 198,
             victoryCount: 109,
             defeatCount: 89,
-            wl: 1.3
+            wl: 1.3,
             gameTime: 48660000,
             killCount: 2711,
-            deathCount: 3044
+            deathCount: 3044,
             kd: 0.9
         },
         octogone: {
@@ -91,7 +91,7 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             gameTime: 10140000,
             killCount: 96,
             deathCount: 72,
-            kd: 1.2
+            kd: 1.2,
             damageCount: 3776
         },
         blitz: {
@@ -103,7 +103,7 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             gameTime: 1260000,
             killCount: 9,
             deathCount: 12,
-            kd: 0.9
+            kd: 0.9,
             nexusDamageCount: 3
         },
         shootCraft: {
@@ -111,7 +111,7 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             gameCount: 4,
             top1Count: 0,
             defeatCount: 4
-            wl: 0
+            wl: 0,
             gameTime: 1140000,
             killCount: 74,
             deathCount: 107,
@@ -121,7 +121,7 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             points: 73,
             gameCount: 8,
             victoryCount: 0,
-            defeatCount: 8
+            defeatCount: 8,
             wl: 0,
             gameTime: 1380000,
             killCount: 10,
