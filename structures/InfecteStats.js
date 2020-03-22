@@ -19,10 +19,10 @@ module.exports = class InfecteStats {
     }
     
        get wl() {
-        return parseFloat (this.victoryCount / this.defeatCount) || 0;
+        return parseFloat(this.victoryCount / this.defeatCount) || 0;
     }
        get defeatCount() {
-        return parseFloat (this.gameCount - this.victoryCount) || 0;
+        return parseInt(this.gameCount - this.victoryCount) || 0;
     }
 
 };
