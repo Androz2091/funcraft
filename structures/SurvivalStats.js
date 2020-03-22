@@ -24,7 +24,7 @@ module.exports = class SurvivalStats {
     }
       
     get defeatCount() {
-        return parseInt(this.gameCount - this.victoryCount) || 0;
+        return parseInt(this.gameCount - this.top1Count) || 0;
     }
 
 };
