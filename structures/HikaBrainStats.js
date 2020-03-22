@@ -14,12 +14,12 @@ module.exports = class HikaBrainStats {
         this.killCount = parseInt(stats.children[15].children[3].children[0].data.split(" ").join("")) || 0;
         this.deathCount = parseInt(stats.children[17].children[3].children[0].data.split(" ").join("")) || 0;
     }
-       get kd() {
-        return parseFloat(this.killCount/this.deathCount) || 0;
+    get kd() {
+        return parseFloat(this.killCount / this.deathCount) || 0;
     }
     
-      get wl() {
-       return parseFloat(this.victoryCount / this.defeatCount) || 0;
+    get wl() {
+        return parseFloat(this.victoryCount / this.defeatCount) || 0;
     }
 
 };

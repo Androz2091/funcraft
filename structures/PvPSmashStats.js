@@ -15,14 +15,17 @@ module.exports = class PvPSmashStats {
         this.damageCount = parseInt(stats.children[17].children[3].children[0].data.split(" ").join(" ")) || 0;
 
     }
-       get kd() {
+    
+    get kd() {
         return parseFloat(this.killCount/this.deathCount) || 0;
     }
     
-      get wl() {
-       return parseFloat(this.victoryCount / this.defeatCount) || 0;
+    get wl() {
+        return parseFloat(this.victoryCount / this.defeatCount) || 0;
     }
-      get defeatCount() {
-       return parseInt(this.gameCount - this.victoryCount) || 0;
+      
+    get defeatCount() {
+        return parseInt(this.gameCount - this.victoryCount) || 0;
     }
+
 };
