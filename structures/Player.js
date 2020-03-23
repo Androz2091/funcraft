@@ -48,4 +48,30 @@ module.exports = class Player {
         + this.landRush.gameTime;
     }
 
+get totalWin() {
+        return this.rush.victoryCount
+        + this.hikaBrain.victoryCount
+        + this.skywars.top1Count
+        + this.octogone.top1Count
+        + this.shootCraft.top1Count
+        + this.infecte.top1Count
+        + this.survival.top1Count
+        + this.blitz.victoryCount
+        + this.PvPSmash.top1Count
+        + this.landRush.victoryCount;
+    }
+
+get totalDefeat() {
+        return this.rush.defeatCount
+        + this.hikaBrain.defeatCount
+        + this.skywars.defeatCount
+        + this.octogone.defeatCount
+        + this.shootCraft.defeatCount
+        + this.infecte.defeatCount
+        + this.survival.defeatCount
+        + this.blitz.defeatCount
+        + this.PvPSmash.defeatCount
+        + this.landRush.defeatCount;
+    }
+
 }
