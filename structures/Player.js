@@ -73,5 +73,17 @@ module.exports = class Player {
         + this.PvPSmash.defeatCount
         + this.landRush.defeatCount;
     }
+        get totalKill() {
+        return this.rush.killCount
+        + this.hikaBrain.killCount
+        + this.skywars.killCount
+        + this.octogone.killCount
+        + this.shootCraft.killCount
+        + this.infecte.killCount
+        + this.survival.killCount
+        + this.blitz.killCount
+        + this.PvPSmash.killCount
+        + this.landRush.killCount;
+    }
 
 }
