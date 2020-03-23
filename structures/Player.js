@@ -48,7 +48,7 @@ module.exports = class Player {
         + this.landRush.gameTime;
     }
 
-get totalWin() {
+    get totalWin() {
         return this.rush.victoryCount
         + this.hikaBrain.victoryCount
         + this.skywars.top1Count
@@ -61,7 +61,7 @@ get totalWin() {
         + this.landRush.victoryCount;
     }
 
-get totalDefeat() {
+    get totalDefeat() {
         return this.rush.defeatCount
         + this.hikaBrain.defeatCount
         + this.skywars.defeatCount
