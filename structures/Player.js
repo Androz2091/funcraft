@@ -54,7 +54,7 @@ module.exports = class Player {
         + this.skywars.top1Count
         + this.octogone.top1Count
         + this.shootCraft.top1Count
-        + this.infecte.top1Count
+        + this.infecte.victoryCount
         + this.survival.top1Count
         + this.blitz.victoryCount
         + this.PvPSmash.top1Count
