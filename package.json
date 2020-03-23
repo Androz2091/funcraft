@@ -1,6 +1,6 @@
 {
   "name": "funcraft",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "Fetch data from Funcraft.net easily!",
   "main": "index.js",
   "scripts": {
