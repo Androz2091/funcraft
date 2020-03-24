@@ -15,7 +15,11 @@ module.exports = class Player {
 
         this.username = $("ol.breadcrumb").get(0).children[5].children[0].data.trim();
         this.avatar = $("img").get(1).attribs.src;
-
+        if ($(".info").get(0).children[1].children[1].children[2].data) {
+        this.grade = $(".info").get(0).children[1].children[1].children[2].data;
+        } else {
+            this.grade = "Aucun"
+        }
         this.registeredAt = $(".info-entry").get(0).children[3].attribs.title;
         this.lastConnection = $(".info-entry").get(1).children[3].attribs.title;
         this.banned = Boolean($(".player-alert").get(0));
