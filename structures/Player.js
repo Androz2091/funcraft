@@ -48,6 +48,20 @@ module.exports = class Player {
         + this.landRush.gameTime;
     }
 
+    get totalPoint() {
+        return this.rush.points
+        + this.hikaBrain.points
+        + this.skywars.points
+        + this.octogone.points
+        + this.shootCraft.points
+        + this.infecte.points
+        + this.survival.points
+        + this.blitz.points
+        + this.PvPSmash.points
+        + this.landRush.points
+
+    }
+
     get totalWin() {
         return this.rush.victoryCount
         + this.hikaBrain.victoryCount
