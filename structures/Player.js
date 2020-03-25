@@ -58,8 +58,7 @@ module.exports = class Player {
         + this.survival.points
         + this.blitz.points
         + this.PvPSmash.points
-        + this.landRush.points
-
+        + this.landRush.points;
     }
 
     get totalWin() {
@@ -87,7 +86,8 @@ module.exports = class Player {
         + this.PvPSmash.defeatCount
         + this.landRush.defeatCount;
     }
-        get totalKill() {
+    
+    get totalKill() {
         return this.rush.killCount
         + this.hikaBrain.killCount
         + this.skywars.killCount
