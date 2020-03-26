@@ -37,41 +37,41 @@ module.exports = class Player {
 
     get totalPoint() {
         return this.rush.points
-            + this.hikaBrain.points
-            + this.skywars.points
-            + this.octogone.points
-            + this.shootCraft.points
-            + this.infecte.points
-            + this.survival.points
-            + this.blitz.points
-            + this.PvPSmash.points
-            + this.landRush.points;
+        + this.hikaBrain.points
+        + this.skywars.points
+        + this.octogone.points
+        + this.shootCraft.points
+        + this.infecte.points
+        + this.survival.points
+        + this.blitz.points
+        + this.PvPSmash.points
+        + this.landRush.points;
     }
 
     get totalWin() {
         return this.rush.victoryCount
-            + this.hikaBrain.victoryCount
-            + this.skywars.top1Count
-            + this.octogone.top1Count
-            + this.shootCraft.top1Count
-            + this.infecte.victoryCount
-            + this.survival.top1Count
-            + this.blitz.victoryCount
-            + this.PvPSmash.top1Count
-            + this.landRush.victoryCount;
+        + this.hikaBrain.victoryCount
+        + this.skywars.top1Count
+        + this.octogone.top1Count
+        + this.shootCraft.top1Count
+        + this.infecte.victoryCount
+        + this.survival.top1Count
+        + this.blitz.victoryCount
+        + this.PvPSmash.top1Count
+        + this.landRush.victoryCount;
     }
 
     get totalDefeat() {
         return this.rush.defeatCount
-            + this.hikaBrain.defeatCount
-            + this.skywars.defeatCount
-            + this.octogone.defeatCount
-            + this.shootCraft.defeatCount
-            + this.infecte.defeatCount
-            + this.survival.defeatCount
-            + this.blitz.defeatCount
-            + this.PvPSmash.defeatCount
-            + this.landRush.defeatCount;
+        + this.hikaBrain.defeatCount
+        + this.skywars.defeatCount
+        + this.octogone.defeatCount
+        + this.shootCraft.defeatCount
+        + this.infecte.defeatCount
+        + this.survival.defeatCount
+        + this.blitz.defeatCount
+        + this.PvPSmash.defeatCount
+        + this.landRush.defeatCount;
     }
 
     get totalGameTime() {
@@ -89,28 +89,28 @@ module.exports = class Player {
 
     get totalKill() {
         return this.rush.killCount
-            + this.hikaBrain.killCount
-            + this.skywars.killCount
-            + this.octogone.killCount
-            + this.shootCraft.killCount
-            + this.infecte.killCount
-            + this.survival.killCount
-            + this.blitz.killCount
-            + this.PvPSmash.killCount
-            + this.landRush.killCount;
+        + this.hikaBrain.killCount
+        + this.skywars.killCount
+        + this.octogone.killCount
+        + this.shootCraft.killCount
+        + this.infecte.killCount
+        + this.survival.killCount
+        + this.blitz.killCount
+        + this.PvPSmash.killCount
+        + this.landRush.killCount;
     }
 
     get totalDeath() {
         return this.rush.deathCount
-            + this.hikaBrain.defeatCount
-            + this.skywars.deathCount
-            + this.octogone.deathCount
-            + this.shootCraft.deathCount
-            + this.infecte.deathCount
-            + this.survival.deathCount
-            + this.blitz.deathCount
-            + this.PvPSmash.deathCount
-            + this.landRush.deathCount;
+        + this.hikaBrain.defeatCount
+        + this.skywars.deathCount
+        + this.octogone.deathCount
+        + this.shootCraft.deathCount
+        + this.infecte.deathCount
+        + this.survival.deathCount
+        + this.blitz.deathCount
+        + this.PvPSmash.deathCount
+        + this.landRush.deathCount;
     }
 
 }
