@@ -113,4 +113,4 @@ module.exports = class Player {
         + this.landRush.deathCount;
     }
 
-}
+};

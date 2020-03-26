@@ -17,7 +17,6 @@ module.exports = class SkywarsStats {
     }
 
     get rank() {
-        let issue = false;
         if (!isNaN(parseInt(stats.children[3].children[3].children[0].data))) {
             return parseInt(stats.children[3].children[3].children[0].data)
         } else {
@@ -25,12 +24,11 @@ module.exports = class SkywarsStats {
                 parseInt(stats.children[3].children[3].children[1].children[0].data);
             } catch (e) {
                 if (e instanceof TypeError) {
-                    issue = true;
                     return 0;
                 }
             }
         }
-        if (issue === false) return parseInt(stats.children[3].children[3].children[1].children[0].data);
+        return parseInt(stats.children[3].children[3].children[1].children[0].data);
     }
 
     get kd() {
