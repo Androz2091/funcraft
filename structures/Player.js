@@ -26,7 +26,7 @@ module.exports = class Player {
               const req = $(".info")
                 .get(0)
                 .children[1].children[i].children[0].data;
-              GRADE_PERSO.push(req.replace(Player.username, ""));
+              GRADE_PERSO.push(req.replace(this.username, ""));
               this.grade = GRADE_PERSO.join("").trim();
             } catch (e) {
               this.grade = GRADE_PERSO.join("").trim();
