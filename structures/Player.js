@@ -15,7 +15,25 @@ module.exports = class Player {
 
         this.username = $("ol.breadcrumb").get(0).children[5].children[0].data.trim();
         this.avatar = $("img").get(1).attribs.src;
-
+        
+         try {
+         this.grade = $(".info").get(0).children[1].children[1].children[2].data.trim();
+        } catch (e) {
+          const COLOR_LENGTH_ARRAY = "1 2 3 4 5 6 7 8 9 10 11 12".split(" ");
+          const GRADE_PERSO = [];
+          COLOR_LENGTH_ARRAY.forEach(i => {
+            try {
+              const req = $(".info")
+                .get(0)
+                .children[1].children[i].children[0].data;
+              GRADE_PERSO.push(req.replace(Player.username, ""));
+              this.grade = GRADE_PERSO.join("").trim();
+            } catch (e) {
+              this.grade = GRADE_PERSO.join("").trim();
+            }
+          });
+        }
+        
         this.registeredAt = $(".info-entry").get(0).children[3].attribs.title;
         this.lastConnection = $(".info-entry").get(1).children[3].attribs.title;
         this.banned = Boolean($(".player-alert").get(0));
