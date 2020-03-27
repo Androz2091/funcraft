@@ -5,6 +5,7 @@ const parsePlayerCount = (data) => {
 module.exports = class PlayerCounts {
 
     constructor($){
+
         const globalCounts = $(".funhead-stats-toggler");
         this.totalOnline = parsePlayerCount(globalCounts.get(0).children[1].children[0].data);
         this.recordPlayerOnline = parsePlayerCount(globalCounts.get(0).children[3].children[1].children[3].children[0].data);
@@ -19,6 +20,7 @@ module.exports = class PlayerCounts {
         this.skywars = parsePlayerCount(gameCounts.get(3).children[0].data);
         this.infecte = parsePlayerCount(gameCounts.get(4).children[0].data);
         this.others = parsePlayerCount(gameCounts.get(5).children[0].data);
+
     }
 
 }

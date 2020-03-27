@@ -7,6 +7,12 @@ module.exports = class RushStats {
         
         stats = $(".player-stats-info").get(0);
 
+        this.rank = 0;
+        if(!isNaN(parseInt(stats.children[3].children[3].children[0].data))){
+            this.rank = parseInt(stats.children[3].children[3].children[0].data);
+        } else if(stats.children[3].children[3].children[1]){
+            this.rank = parseInt(stats.children[3].children[3].children[1].children[0].data);
+        }
         this.points = parseInt(stats.children[5].children[3].children[0].data.split(" ").join("")) || 0;
         this.gameCount = parseInt(stats.children[7].children[3].children[0].data.split(" ").join("")) || 0;
         this.victoryCount = parseInt(stats.children[9].children[3].children[0].data.split(" ").join("")) || 0;
@@ -16,21 +22,6 @@ module.exports = class RushStats {
         this.deathCount = parseInt(stats.children[17].children[3].children[0].data.split(" ").join("")) || 0;
         this.destroyedBedCount = parseInt(stats.children[19].children[3].children[0].data.split(" ").join("")) || 0;
 
-    }
-
-    get rank() {
-        if (!isNaN(parseInt(stats.children[3].children[3].children[0].data))) {
-            return parseInt(stats.children[3].children[3].children[0].data)
-        } else {
-            try {
-                parseInt(stats.children[3].children[3].children[1].children[0].data);
-            } catch (e) {
-                if (e instanceof TypeError) {
-                    return 0;
-                }
-            }
-        }
-        return parseInt(stats.children[3].children[3].children[1].children[0].data);
     }
 
     get kd() {

@@ -12,6 +12,7 @@ module.exports = class Leaderboard {
             const gameName = $(".spodium").get(i).attribs.class.split("ulbg-")[1];
             this[gameName] = game;
         }
+
     }
 
 }

@@ -33,6 +33,7 @@ module.exports = class Player {
         this.blitz = new BlitzStats($);
         this.PvPSmash = new PvPSmashStats($);
         this.landRush = new LandRushStats($);
+
     }
 
     get totalPoint() {
