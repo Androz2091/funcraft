@@ -60,7 +60,8 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             killCount: 1868,
             deathCount: 2443,
             kd: 0.8,
-            destroyedBedCount: 311
+            destroyedBedCount: 311,
+            rank: 82903
         },
         skywars {
             points: 129036,
@@ -71,7 +72,8 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             gameTime: 343680000,
             killCount: 4305,
             deathCount: 2406,
-            kd: 1.9
+            kd: 1.9,
+            rank: 0
         },
         hikaBrain: {
             points: 24251,
@@ -82,7 +84,8 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             gameTime: 48660000,
             killCount: 2711,
             deathCount: 3044,
-            kd: 0.9
+            kd: 0.9,
+            rank: 0
         },
         octogone: {
             points: 5362,
@@ -93,7 +96,8 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             killCount: 96,
             deathCount: 72,
             kd: 1.2,
-            damageCount: 3776
+            damageCount: 3776,
+            rank: 0
         },
         blitz: {
             points: 554,
@@ -105,7 +109,8 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             killCount: 9,
             deathCount: 12,
             kd: 0.9,
-            nexusDamageCount: 3
+            nexusDamageCount: 3,
+            rank: 0
         },
         shootCraft: {
             points: 160,
@@ -116,7 +121,8 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             gameTime: 1140000,
             killCount: 74,
             deathCount: 107,
-            kd: 0.7
+            kd: 0.7,
+            rank: 0
         },
         infecte: {
             points: 73,
@@ -127,7 +133,8 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             gameTime: 1380000,
             killCount: 10,
             deathCount: 13,
-            kd: 0.9
+            kd: 0.9,
+            rank: 0
         },
         survival: {
             points: 0,
@@ -137,7 +144,8 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             gameTime: 0,
             killCount: 0,
             deathCount: 0,
-            kd : 0
+            kd: 0,
+            rank: 0
         },
         blitz: {
             points: 554,
@@ -147,7 +155,8 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             gameTime: 1260000,
             killCount: 9,
             deathCount: 12,
-            nexusDamageCount: 3
+            nexusDamageCount: 3,
+            rank: 0
         },
         PvPSmash: {
             points: 36249,
@@ -159,7 +168,8 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             killCount: 1814,
             deathCount: 1228,
             kd: 1.4,
-            damageCount: 64263
+            damageCount: 64263,
+            rank: 0
         },
         landRush: {
             points: 0,
@@ -171,7 +181,8 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             killCount: 0,
             deathCount: 0,
             ld: 0,
-            destroyedBedCount: 0
+            destroyedBedCount: 0,
+            rank: 0
         }
     }
     */
