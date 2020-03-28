@@ -26,11 +26,14 @@ module.exports = class InfecteStats {
     }
 
     get wl() {
-        return (parseFloat(this.victoryCount / this.deathCount) || 0).toFixed(2);
+        return (parseFloat(this.victoryCount / this.defeatCount) || 0).toFixed(2);
     }
 
     get defeatCount() {
         return parseInt(this.gameCount - this.victoryCount) || 0;
     }
 
+    get winrate() {
+        return (parseFloat(this.victoryCount / this.gameCount * 100 || 0).toFixed(2);
+    }
 };
