@@ -1,11 +1,18 @@
 const ms = require("human-ms");
+let stats;
 
 module.exports = class OctogoneStats {
 
     constructor($){
         
-        const stats = $(".player-stats-info").get(3);
+        stats = $(".player-stats-info").get(3);
 
+        this.rank = 0;
+        if(!isNaN(parseInt(stats.children[3].children[3].children[0].data))){
+            this.rank = parseInt(stats.children[3].children[3].children[0].data);
+        } else if(stats.children[3].children[3].children[1]){
+            this.rank = parseInt(stats.children[3].children[3].children[1].children[0].data);
+        }
         this.points = parseInt(stats.children[5].children[3].children[0].data.split(" ").join("")) || 0;
         this.gameCount = parseInt(stats.children[7].children[3].children[0].data.split(" ").join("")) || 0;
         this.top1Count = parseInt(stats.children[9].children[3].children[0].data.split(" ").join("")) || 0;
@@ -15,7 +22,7 @@ module.exports = class OctogoneStats {
         this.damageCount = parseInt(stats.children[17].children[3].children[0].data.split(" ").join("")) || 0;
 
     }
-    
+
     get kd() {
         return (parseFloat(this.killCount / this.deathCount) || 0).toFixed(2);
     }

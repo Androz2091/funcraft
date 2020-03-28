@@ -21,7 +21,7 @@ module.exports = class Player {
         this.banned = Boolean($(".player-alert").get(0));
 
         this.gloryCount = parseInt($(".info-stats").get(0).children[1].children[2].data.trim().split(" Gloires")[0].split(" ").join(""));
-        this.gameCount = parseInt($(".info-stats").get(0).children[3].children[0].data.trim().split(" ")[0]);
+        this.totalgameCount = parseInt($(".info-stats").get(0).children[3].children[0].data.trim().split(" ")[0]);
 
         this.rush = new RushStats($);
         this.hikaBrain = new HikaBrainStats($);
@@ -33,19 +33,7 @@ module.exports = class Player {
         this.blitz = new BlitzStats($);
         this.PvPSmash = new PvPSmashStats($);
         this.landRush = new LandRushStats($);
-    }
 
-    get totalGameTime() {
-        return this.rush.gameTime
-        + this.hikaBrain.gameTime
-        + this.skywars.gameTime
-        + this.octogone.gameTime
-        + this.shootCraft.gameTime
-        + this.infecte.gameTime
-        + this.survival.gameTime
-        + this.blitz.gameTime
-        + this.PvPSmash.gameTime
-        + this.landRush.gameTime;
     }
 
     get totalPoint() {
@@ -86,7 +74,20 @@ module.exports = class Player {
         + this.PvPSmash.defeatCount
         + this.landRush.defeatCount;
     }
-    
+
+    get totalGameTime() {
+        return this.rush.gameTime
+        + this.hikaBrain.gameTime
+        + this.skywars.gameTime
+        + this.octogone.gameTime
+        + this.shootCraft.gameTime
+        + this.infecte.gameTime
+        + this.survival.gameTime
+        + this.blitz.gameTime
+        + this.PvPSmash.gameTime
+        + this.landRush.gameTime;
+    }
+
     get totalKill() {
         return this.rush.killCount
         + this.hikaBrain.killCount
@@ -100,4 +101,17 @@ module.exports = class Player {
         + this.landRush.killCount;
     }
 
-}
+    get totalDeath() {
+        return this.rush.deathCount
+        + this.hikaBrain.defeatCount
+        + this.skywars.deathCount
+        + this.octogone.deathCount
+        + this.shootCraft.deathCount
+        + this.infecte.deathCount
+        + this.survival.deathCount
+        + this.blitz.deathCount
+        + this.PvPSmash.deathCount
+        + this.landRush.deathCount;
+    }
+
+};
