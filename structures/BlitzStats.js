@@ -1,11 +1,10 @@
 const ms = require("human-ms");
-let stats;
 
 module.exports = class BlitzStats {
 
     constructor($){
 
-        stats = $(".player-stats-info").get(7);
+        const stats = $(".player-stats-info").get(7);
 
         this.rank = 0;
         if(!isNaN(parseInt(stats.children[3].children[3].children[0].data))){

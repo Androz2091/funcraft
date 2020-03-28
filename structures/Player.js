@@ -21,7 +21,7 @@ module.exports = class Player {
         this.banned = Boolean($(".player-alert").get(0));
 
         this.gloryCount = parseInt($(".info-stats").get(0).children[1].children[2].data.trim().split(" Gloires")[0].split(" ").join(""));
-        this.totalgameCount = parseInt($(".info-stats").get(0).children[3].children[0].data.trim().split(" ")[0]);
+        this.totalGameCount = parseInt($(".info-stats").get(0).children[3].children[0].data.trim().split(" ")[0]);
 
         this.rush = new RushStats($);
         this.hikaBrain = new HikaBrainStats($);
