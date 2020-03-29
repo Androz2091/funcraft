@@ -13,7 +13,24 @@ module.exports = class Player {
 
     constructor($){
 
+        const playerName = $(".playername").get(0);
+
         this.username = $("ol.breadcrumb").get(0).children[5].children[0].data.trim();
+        if (['Admin', 'Joueur', 'SuperModo', 'Modo', 'Helper', 'Youtuber', 'Builder', 'Graphiste'].includes(playerName.children[1].children[0].data.trim().split(' ')[0])) {
+            this.grade = playerName.children[1].children[0].data.trim().split(' ')[0];
+        } else {
+            let error;
+            try {
+                playerName.children[1].children[2].data.trim();
+            } catch (e) {
+                if (e instanceof TypeError) {
+                    this.grade = '';
+                    for (let i = 1; i < playerName.children.length - 2; i++) this.grade += playerName.children[i].children[0].data;
+                    error = true;
+                }
+            }
+            if (!error) this.grade = playerName.children[1].children[2].data.trim();
+        }
         this.avatar = $("img").get(1).attribs.src;
 
         this.registeredAt = $(".info-entry").get(0).children[3].attribs.title;
