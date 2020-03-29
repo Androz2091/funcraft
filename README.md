@@ -61,7 +61,8 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             deathCount: 2443,
             kd: 0.8,
             destroyedBedCount: 311,
-            rank: 82903
+            rank: 82903,
+            winRate: 90
         },
         skywars {
             points: 129036,
@@ -73,7 +74,8 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             killCount: 4305,
             deathCount: 2406,
             kd: 1.9,
-            rank: 0
+            rank: 0,
+            winRate: 20
         },
         hikaBrain: {
             points: 24251,
@@ -85,7 +87,8 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             killCount: 2711,
             deathCount: 3044,
             kd: 0.9,
-            rank: 0
+            rank: 0,
+            winRate: 50
         },
         octogone: {
             points: 5362,

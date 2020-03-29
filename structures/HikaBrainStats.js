@@ -31,4 +31,8 @@ module.exports = class HikaBrainStats {
         return (parseFloat(this.victoryCount / this.defeatCount) || 0).toFixed(2);
     }
 
+   get winRate() {
+        return (parseFloat(this.victoryCount / this.gameCount * 100 || 0)).toFixed(2);
+    }
+
 };

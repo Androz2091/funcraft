@@ -27,11 +27,15 @@ module.exports = class ShootCraftStats {
     }
     
     get wl() {
-        return (parseFloat(this.victoryCount / this.defeatCount) || 0).toFixed(2);
+        return (parseFloat(this.top1Count / this.defeatCount) || 0).toFixed(2);
     }
       
     get defeatCount() {
         return parseInt(this.gameCount - this.top1Count) || 0;
+    }
+
+    get winRate() {
+        return (parseFloat(this.top1Count / this.gameCount * 100 || 0)).toFixed(2);
     }
 
 };
