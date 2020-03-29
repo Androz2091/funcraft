@@ -34,7 +34,7 @@ module.exports = class PvPSmashStats {
         return parseInt(this.gameCount - this.top1Count) || 0;
     }
 
-    get winrate() {
-        return (parseFloat(this.top1Count / this.gameCount * 100 || 0).toFixed(2);
+    get winRate() {
+        return (parseFloat(this.top1Count / this.gameCount * 100 || 0)).toFixed(2);
     }
 };

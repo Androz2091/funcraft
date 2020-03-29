@@ -35,8 +35,8 @@ module.exports = class OctogoneStats {
     }
     
 
-    get winrate() {
-        return (parseFloat(this.top1Count / this.gameCount * 100 || 0).toFixed(2);
+    get winRate() {
+        return (parseFloat(this.top1Count / this.gameCount * 100 || 0)).toFixed(2);
     }
 
 };

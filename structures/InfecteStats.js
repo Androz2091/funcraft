@@ -33,7 +33,7 @@ module.exports = class InfecteStats {
         return parseInt(this.gameCount - this.victoryCount) || 0;
     }
 
-    get winrate() {
-        return (parseFloat(this.victoryCount / this.gameCount * 100 || 0).toFixed(2);
+    get winRate() {
+        return (parseFloat(this.victoryCount / this.gameCount * 100 || 0)).toFixed(2);
     }
 };
