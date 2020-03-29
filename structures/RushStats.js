@@ -31,4 +31,8 @@ module.exports = class RushStats {
         return (parseFloat(this.victoryCount / this.defeatCount) || 0).toFixed(2);
     }
 
+    get winrate() {
+        return (parseFloat(this.victoryCount / this.gameCount * 100 || 0).toFixed(2);
+    }
+
 };
