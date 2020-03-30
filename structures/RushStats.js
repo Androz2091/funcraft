@@ -3,7 +3,7 @@ const ms = require("human-ms");
 module.exports = class RushStats {
 
     constructor($){
-        
+
         const stats = $(".player-stats-info").get(0);
 
         this.rank = 0;

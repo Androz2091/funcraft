@@ -3,7 +3,7 @@ const ms = require("human-ms");
 module.exports = class OctogoneStats {
 
     constructor($){
-        
+
         const stats = $(".player-stats-info").get(3);
 
         this.rank = 0;

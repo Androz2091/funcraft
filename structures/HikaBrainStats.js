@@ -3,7 +3,7 @@ const ms = require("human-ms");
 module.exports = class HikaBrainStats {
 
     constructor($){
-        
+
         const stats = $(".player-stats-info").get(1);
 
         this.rank = 0;

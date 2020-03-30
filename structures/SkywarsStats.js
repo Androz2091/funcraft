@@ -3,7 +3,7 @@ const ms = require("human-ms");
 module.exports = class SkywarsStats {
 
     constructor($){
-        
+
         const stats = $(".player-stats-info").get(2);
 
         this.rank = 0;

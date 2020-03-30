@@ -3,7 +3,7 @@ const ms = require("human-ms");
 module.exports = class LandRushStats {
 
     constructor($){
-        
+
         const stats = $(".player-stats-info").get(9);
 
         this.rank = 0;
