@@ -1,11 +1,10 @@
 const ms = require("human-ms");
-let stats;
 
 module.exports = class OctogoneStats {
 
     constructor($){
-        
-        stats = $(".player-stats-info").get(3);
+
+        const stats = $(".player-stats-info").get(3);
 
         this.rank = 0;
         if(!isNaN(parseInt(stats.children[3].children[3].children[0].data))){
