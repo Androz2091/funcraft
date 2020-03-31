@@ -9,7 +9,7 @@ const baseURL = "https://www.funcraft.net/fr/";
 
 module.exports = {
 
-    fetchPlayer: (username, period) => {
+    fetchPlayer: (username) => {
         return new Promise(async (resolve, reject) => {
             const url = `${baseURL}joueurs?q=${username}`;
             const res = await fetch(url);
