@@ -21,13 +21,15 @@ module.exports = {
         });
     },
 
-    fetchLeaderboard: () => {
-        return new Promise(async (resolve) => {
-            const url = `${baseURL}classement`;
+    fetchLeaderboard: (game) => {
+        return new Promise(async (resolve, reject) => {
+            const url = `${baseURL}classement/${game}/always`;
             const res = await fetch(url);
             const content = await res.text();
             const $ = cheerio.load(content);
-            resolve(new Leaderboard($));
+            const error = $(".list-links").get(0);
+            if (!error) resolve(new Leaderboard($));
+                else reject("Game not found.");
         });
     },
 

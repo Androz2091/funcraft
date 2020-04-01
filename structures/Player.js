@@ -117,4 +117,4 @@ module.exports = class Player {
         + this.landRush.killCount;
     }
 
-}
+};
