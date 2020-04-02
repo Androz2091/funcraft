@@ -13,24 +13,7 @@ module.exports = class Player {
 
     constructor($){
 
-        const playerName = $(".playername").get(0);
-
         this.username = $("ol.breadcrumb").get(0).children[5].children[0].data.trim();
-        if (['Admin', 'Joueur', 'SuperModo', 'Modo', 'Helper', 'Youtuber', 'Builder', 'Graphiste'].includes(playerName.children[1].children[0].data.trim().split(' ')[0])) {
-            this.grade = playerName.children[1].children[0].data.trim().split(' ')[0];
-        } else {
-            let error;
-            try {
-                playerName.children[1].children[2].data.trim();
-            } catch (e) {
-                if (e instanceof TypeError) {
-                    this.grade = '';
-                    for (let i = 1; i < playerName.children.length - 2; i++) this.grade += playerName.children[i].children[0].data;
-                    error = true;
-                }
-            }
-            if (!error) this.grade = playerName.children[1].children[2].data.trim();
-        }
         this.avatar = $("img").get(1).attribs.src;
 
         this.registeredAt = $(".info-entry").get(0).children[3].attribs.title;
@@ -38,7 +21,7 @@ module.exports = class Player {
         this.banned = Boolean($(".player-alert").get(0));
 
         this.gloryCount = parseInt($(".info-stats").get(0).children[1].children[2].data.trim().split(" Gloires")[0].split(" ").join(""));
-        this.gameCount = parseInt($(".info-stats").get(0).children[3].children[0].data.trim().split(" ")[0]);
+        this.totalGameCount = parseInt($(".info-stats").get(0).children[3].children[0].data.trim().split(" ")[0]);
 
         this.rush = new RushStats($);
         this.hikaBrain = new HikaBrainStats($);
@@ -50,19 +33,7 @@ module.exports = class Player {
         this.blitz = new BlitzStats($);
         this.PvPSmash = new PvPSmashStats($);
         this.landRush = new LandRushStats($);
-    }
 
-    get totalGameTime() {
-        return this.rush.gameTime
-        + this.hikaBrain.gameTime
-        + this.skywars.gameTime
-        + this.octogone.gameTime
-        + this.shootCraft.gameTime
-        + this.infecte.gameTime
-        + this.survival.gameTime
-        + this.blitz.gameTime
-        + this.PvPSmash.gameTime
-        + this.landRush.gameTime;
     }
 
     get totalPoint() {
@@ -103,7 +74,20 @@ module.exports = class Player {
         + this.PvPSmash.defeatCount
         + this.landRush.defeatCount;
     }
-    
+
+    get totalGameTime() {
+        return this.rush.gameTime
+        + this.hikaBrain.gameTime
+        + this.skywars.gameTime
+        + this.octogone.gameTime
+        + this.shootCraft.gameTime
+        + this.infecte.gameTime
+        + this.survival.gameTime
+        + this.blitz.gameTime
+        + this.PvPSmash.gameTime
+        + this.landRush.gameTime;
+    }
+
     get totalKill() {
         return this.rush.killCount
         + this.hikaBrain.killCount
@@ -115,6 +99,19 @@ module.exports = class Player {
         + this.blitz.killCount
         + this.PvPSmash.killCount
         + this.landRush.killCount;
+    }
+
+    get totalDeath() {
+        return this.rush.deathCount
+        + this.hikaBrain.defeatCount
+        + this.skywars.deathCount
+        + this.octogone.deathCount
+        + this.shootCraft.deathCount
+        + this.infecte.deathCount
+        + this.survival.deathCount
+        + this.blitz.deathCount
+        + this.PvPSmash.deathCount
+        + this.landRush.deathCount;
     }
 
 };
