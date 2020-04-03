@@ -11,7 +11,7 @@ const LandRushStats = require("./LandRushStats");
 
 module.exports = class Player {
 
-    constructor($){
+    constructor($, period){
 
         this.username = $("ol.breadcrumb").get(0).children[5].children[0].data.trim();
         this.avatar = $("img").get(1).attribs.src;
@@ -23,16 +23,16 @@ module.exports = class Player {
         this.gloryCount = parseInt($(".info-stats").get(0).children[1].children[2].data.trim().split(" Gloires")[0].split(" ").join(""));
         this.totalGameCount = parseInt($(".info-stats").get(0).children[3].children[0].data.trim().split(" ")[0]);
 
-        this.rush = new RushStats($);
-        this.hikaBrain = new HikaBrainStats($);
-        this.skywars = new SkywarsStats($);
-        this.octogone = new OctogoneStats($);
-        this.shootCraft = new ShootCraftStats($);
-        this.infecte = new InfecteStats($);
-        this.survival = new SurvivalStats($);
-        this.blitz = new BlitzStats($);
-        this.PvPSmash = new PvPSmashStats($);
-        this.landRush = new LandRushStats($);
+        this.rush = new RushStats($, period);
+        this.hikaBrain = new HikaBrainStats($, period);
+        this.skywars = new SkywarsStats($, period);
+        this.octogone = new OctogoneStats($, period);
+        this.shootCraft = new ShootCraftStats($, period);
+        this.infecte = new InfecteStats($, period);
+        this.survival = new SurvivalStats($, period);
+        this.blitz = new BlitzStats($, period);
+        this.PvPSmash = new PvPSmashStats($, period);
+        this.landRush = new LandRushStats($, period);
 
     }
 
