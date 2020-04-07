@@ -13,6 +13,8 @@ module.exports = class Player {
 
     constructor($, period){
 
+        const playerName = $(".playername").get(0);
+
         this.username = $("ol.breadcrumb").get(0).children[5].children[0].data.trim();
         this.avatar = $("img").get(1).attribs.src;
         if (['Admin', 'Joueur', 'SuperModo', 'Modo', 'Helper', 'Youtuber', 'Builder', 'Graphiste'].includes(playerName.children[1].children[0].data.trim().split(' ')[0])) {
