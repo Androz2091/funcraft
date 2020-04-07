@@ -202,6 +202,7 @@ funcraft.fetchLeaderboard("blitz").then((leaderboard) => {
     console.log(leaderboard);
     /*
     {
+
         lb: [
             'ErwiX',
             'PrinceZoulette',

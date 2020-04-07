@@ -9,14 +9,14 @@ const baseURL = "https://www.funcraft.net/fr/";
 
 module.exports = {
 
-    fetchPlayer: (username) => {
+    fetchPlayer: (username, period) => {
         return new Promise(async (resolve, reject) => {
             const url = `${baseURL}joueurs?q=${username}`;
             const res = await fetch(url);
             const content = await res.text();
             const $ = cheerio.load(content);
             const error = $(".alert-danger").get(0);
-            if(!error) resolve(new Player($));
+            if(!error) resolve(new Player($, period));
                 else reject("Player not found.");
         });
     },
