@@ -21,9 +21,10 @@ module.exports = {
         });
     },
 
-    fetchLeaderboard: (game) => {
+    fetchLeaderboard: (game,period = "/") => {
         return new Promise(async (resolve, reject) => {
-            const url = `${baseURL}classement/${game}/always`;
+            if(!["/","always"].includes(period)) reject("Period not found")
+            const url = `${baseURL}classement/${game}/${period}`;
             const res = await fetch(url);
             const content = await res.text();
             const $ = cheerio.load(content);
