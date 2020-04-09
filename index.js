@@ -21,9 +21,9 @@ module.exports = {
         });
     },
 
-    fetchLeaderboard: (game,period = "/") => {
+    fetchLeaderboard: (game,period = "") => {
         return new Promise(async (resolve, reject) => {
-            if(!["/","always"].includes(period)) reject("Period not found")
+            if(!["","always"].includes(period)) reject("Period not found")
             const url = `${baseURL}classement/${game}/${period}`;
             const res = await fetch(url);
             const content = await res.text();
