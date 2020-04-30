@@ -12,7 +12,7 @@ npm install --save funcraft
 const funcraft = require("funcraft");
 
 // Obtenir les stats d'un joueur
-funcraft.fetchPlayer("Saethyios").then((player) => {
+funcraft.fetchPlayer("Saethyios", "month").then((player) => {
     console.log(player.gameCount); // 4935
     console.log(player.rush.victoryCount); // 158
 });
@@ -77,7 +77,7 @@ funcraft.fetchPlayer("Saethyios").then((player) => {
             winRate: 55,
             rank: 0
         },
-        skywars {
+        skyWars: {
             points: 129036,
             gameCount: 2949,
             victoryCount: 600,

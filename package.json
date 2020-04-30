@@ -4,7 +4,8 @@
   "description": "Fetch data from Funcraft.net easily!",
   "main": "index.js",
   "scripts": {
-    "test": "index.js"
+    "test": "index.js",
+    "format": "prettier --write \"**/*.js\""
   },
   "repository": "git+https://github.com/Androz2091/funcraft.git",
   "author": "Androz2091 <androz2091@gmail.com>",
@@ -13,5 +14,8 @@
     "cheerio": "^1.0.0-rc.3",
     "human-ms": "^1.0.5",
     "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
   }
 }
