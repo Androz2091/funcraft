@@ -1,7 +1,6 @@
 # Node
 node_modules
 yarn.lock
-package-lock.json
 
 #IDEs stuff
 .vscode
