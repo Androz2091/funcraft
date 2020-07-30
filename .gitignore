@@ -3,9 +3,6 @@ node_modules
 yarn.lock
 package-lock.json
 
-# Test
-**test**
-
 #IDEs stuff
 .vscode
 .idea
