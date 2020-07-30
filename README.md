@@ -2,6 +2,8 @@
 
 > #### CE PROJET EST DÉPRÉCIÉ, ET LA PLUPART DES ENDPOINTS NE FONCTIONNENT PLUS. SI VOUS SOUHAITEZ OBTENIR DE L'AIDE, VOUS POUVEZ REJOINDRE [CE SERVEUR DISCORD](https://discord.gg/hw87VUQ). 
 
+Le site de Funcraft subit régulièrement des mises à jour, qui cassent parfois l'entièreté des fonctionnalités du module et maintenir un scraper comme celui-ci demande donc beaucoup de temps, plus de temps que je ne peux y passer. 
+
 ## Installation
 
 ```sh
