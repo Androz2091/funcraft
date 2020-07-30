@@ -20,7 +20,7 @@ module.exports = class GamesStats {
                 .filter((s) => s)
                 .reduce((acc, val) => acc && acc[val], obj);
 
-        const c = (num) => num.replace(/ /g, '');
+        const c = (num) => String(num).replace(/ /g, '');
 
         const gameStats = (stats, gt, kc, dc) => ({
             points: parseInt(c(path(stats.children[5], d))) || 0,
